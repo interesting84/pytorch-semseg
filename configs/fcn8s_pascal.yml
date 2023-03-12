@@ -1,7 +1,7 @@
 model:
-    arch: fcn8s
+    arch: unet
 data:
-    dataset: pascal
+    dataset: dermamnist
     train_split: train_aug
     val_split: val
     img_rows: 'same'
@@ -23,4 +23,4 @@ training:
         name: 'cross_entropy'
         size_average: False
     lr_schedule:
-    resume: fcn8s_pascal_best_model.pkl
+    resume:
